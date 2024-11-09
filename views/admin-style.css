@@ -1,0 +1,136 @@
+/* Reset dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Gaya dasar untuk body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Kontainer utama */
+.container {
+  max-width: 1000px; /* Lebar maksimal kontainer */
+  width: 90%;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Judul besar */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Gaya untuk tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+/* Kolom khusus untuk aksi */
+table td:last-child,
+table th:last-child {
+  text-align: center;
+  width: 120px; /* Lebar kolom aksi yang lebih proporsional */
+}
+
+/* Gaya untuk tombol Update */
+td form button {
+  padding: 8px 10px;
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+td form button:hover {
+  background-color: #0056b3;
+}
+
+/* Gaya untuk tombol Logout */
+a.button {
+  display: inline-block;
+  padding: 12px 20px;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+}
+
+a.button:hover {
+  background-color: #0056b3;
+}
+
+/* Gaya untuk link dokumen */
+td a {
+  color: #007bff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+td a:hover {
+  color: #0056b3;
+}
+
+/* Gaya pesan error */
+.error-message {
+  color: red;
+  background-color: #ffe6e6;
+  border: 1px solid red;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+/* Margin tambahan untuk tombol di dalam tabel */
+td .button,
+td form button {
+  margin: 5px 0;
+}

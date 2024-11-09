@@ -1,0 +1,231 @@
+/* Reset dasar */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Gaya dasar untuk body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Kontainer utama */
+.container {
+  max-width: 800px; /* Lebar maksimal kontainer */
+  width: 90%;
+  margin: auto;
+  background-color: #ffffff;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+/* Judul besar */
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+h2 {
+  margin-top: 40px; /* Menambahkan jarak atas pada judul Status Pengajuan Beasiswa */
+  margin-bottom: 20px; /* Jarak bawah untuk memisahkan dari tabel */
+}
+
+/* Gaya untuk label dan input di form */
+form label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+form textarea {
+  resize: vertical; /* Memungkinkan pengguna mengubah ukuran hanya vertikal */
+  min-height: 80px;
+}
+
+/* Tombol Kirim Pengajuan */
+form input[type="submit"] {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Gaya link Kembali ke Dashboard */
+form a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+form a:hover {
+  color: #0056b3;
+}
+
+/* Gaya untuk link tombol di halaman utama */
+.button {
+  display: inline-block;
+  padding: 8px 16px; /* Sesuaikan padding agar proporsional */
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007bff;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+/* Gaya tambahan untuk dashboard */
+.dashboard-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.dashboard-content h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* Tautan logout */
+.dashboard-content a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.dashboard-content a:hover {
+  color: #0056b3;
+}
+
+/* Gaya untuk tabel daftar beasiswa */
+table {
+  width: 100%; /* Tabel lebar penuh dalam kontainer */
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+table,
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 12px; /* Padding yang cukup untuk setiap sel */
+  text-align: left;
+}
+
+th {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  font-weight: bold;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+/* Gaya tombol di dalam tabel */
+td .button {
+  padding: 8px 12px; /* Sesuaikan padding untuk tombol di tabel */
+  font-size: 14px;
+  width: auto; /* Lebar tombol otomatis */
+  margin: 0; /* Hilangkan margin untuk tombol di tabel */
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+}
+
+td .button:hover {
+  background-color: #0056b3;
+}
+
+/* Kolom khusus untuk aksi di tabel */
+table td:last-child,
+table th:last-child {
+  text-align: center;
+  width: 100px; /* Lebar kolom aksi yang proporsional */
+}
+
+/* Gaya untuk dropdown (select) */
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+/* Gaya untuk input file */
+form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  background-color: #ffffff;
+}
+
+.error-message {
+  color: red;
+  background-color: #ffe6e6;
+  border: 1px solid red;
+  padding: 10px;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 5px;
+}

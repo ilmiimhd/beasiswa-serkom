@@ -1,10 +1,11 @@
 <?php
 $host = 'localhost';
 $user = 'root';
-$pass = ''; // kosongkan jika tidak ada password untuk MySQL
-$dbname = 'beasiswa_serkom';
+$password = '';
+$dbname = 'pendaftaran_beasiswa';
 
-$conn = new mysqli($host, $user, $pass, $dbname);
+// Membuat koneksi
+$conn = new mysqli($host, $user, $password, $dbname);
 
 // Cek koneksi
 if ($conn->connect_error) {
